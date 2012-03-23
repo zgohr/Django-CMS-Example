@@ -1,0 +1,13 @@
+{% load cms_tags sekizai_tags %}
+<!doctype html>
+<head>
+  <title>{{ request.current_page.get_title }}</title>
+  {% render_block "css" %}
+</head>
+
+<body>
+{% cms_toolbar %}
+    {% placeholder "main" %}
+{% render_block "js" %}
+</body>
+</html>
