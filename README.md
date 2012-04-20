@@ -1,4 +1,3 @@
-
 Use virtualenvwrapper to keep your python environments isolated.
 
 http://www.doughellmann.com/projects/virtualenvwrapper/
@@ -8,6 +7,10 @@ It makes a mighty assumption that the closest implementation of
 Django-CMS being compatible with Django version 1.4 is
 
 https://github.com/tback/django-cms/tree/django_1.4_compatibility/here_be_dragons
+
+You'll also need to have sqlite3 installed
+
+``` sudo apt-get install sqlite3 libsqlite3-dev ```
 
 Once you are in an isolated python environment
 
