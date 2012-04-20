@@ -1,9 +1,9 @@
-# -*- coding: utf-8 -*-
+
 import os
 
 gettext = lambda s: s
 
-PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
+PROJECT_DIR = os.path.abspath(os.path.dirname(__file__) + "../../")
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -53,11 +53,6 @@ MEDIA_ROOT = os.path.join(PROJECT_DIR, 'media')
 
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 
-# Use this directory to store common static files
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_DIR, 'common'),
-)
-
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
@@ -71,7 +66,7 @@ STATIC_URL = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '0r6%7gip5tmez*vygfv+u14h@4lbt^8e2^26o#5_f_#b7%cm)u'
+SECRET_KEY = '4kf4k4f$K$%98f94fkj9((Kf49I(F$9F949fkfkf)*'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -104,7 +99,7 @@ CMS_TEMPLATES = (
     ('example.html', 'Example Template'),
 )
 
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'app.urls'
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_DIR, 'templates'),
@@ -130,3 +125,5 @@ INSTALLED_APPS = (
     'cms.plugins.googlemap',
     'sekizai',
 )
+
+WSGI_APPLICATION = 'app.wsgi.application'

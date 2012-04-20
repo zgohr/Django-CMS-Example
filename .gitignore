@@ -1,3 +1,4 @@
 *.swp
 *.pyc
 mycms.db
+local.py
