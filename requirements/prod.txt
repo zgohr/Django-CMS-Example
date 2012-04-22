@@ -2,6 +2,7 @@ Django==1.4
 
 # The key to this whole project until Django-CMS releases for the Django 1.4 upgrade
 git+git://github.com/tback/django-cms.git@django_1.4_compatibility/here_be_dragons#egg=django-cms
+git+git://github.com/tomscytale/django-sekizai.git#egg=django-sekizai
 
 Jinja2==2.6
 PIL==1.1.7
@@ -10,11 +11,9 @@ South==0.7.4
 Sphinx==1.1.3
 django-classy-tags==0.3.4.1
 django-mptt==0.5.1
-django-sekizai==0.5
 docutils==0.8.1
 html5lib==0.95
 wsgiref==0.1.2
 
 # Security
-django-session-csrf
 py-bcrypt

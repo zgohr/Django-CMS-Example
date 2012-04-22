@@ -85,7 +85,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'session_csrf.CsrfMiddleware', # Must be after auth middleware
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
@@ -98,13 +98,14 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.core.context_processors.media',
     'django.core.context_processors.static',
-    'session_csrf.context_processor',
+    'django.core.context_processors.csrf',
     'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
 )
 
 CMS_TEMPLATES = (
     ('example.html', 'Example Template'),
+    ('template_1.html', 'HTML5 bootstrap')
 )
 
 ROOT_URLCONF = 'app.urls'
