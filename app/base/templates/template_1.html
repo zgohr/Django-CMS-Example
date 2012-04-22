@@ -1,6 +1,31 @@
 {% extends "base.html" %}
-{% load cms_tags %}
+{% load cms_tags menu_tags sekizai_tags %}
+
+{% block header %}
+    {% if user.is_authenticated %}
+        {% cms_toolbar %}
+    {% endif %}
+    <div class='navbar'>
+        <div class='navbar-inner'>
+            <div class='container'>
+            <a class='brand' href='#'>
+                Brand
+            </a>
+            <ul class='nav'>
+                {% show_menu %}
+            </ul>
+            {% if user.is_authenticated %}
+            <ul class='nav pull-right'>
+                <li id='cms_tb_toggle'>
+                    <a href='#'>Edit toolbar</a>
+                </li>
+            </ul>
+            {% endif %}
+            </div> <!-- container -->
+        </div> <!-- navbar-inner -->
+    </div> <!-- navbar -->
+{% endblock header %}
 
 {% block base_content %}
-  {% placeholder template_1_content %}
-{% endblock %}
+  {% placeholder content %}
+{% endblock base_content %}
