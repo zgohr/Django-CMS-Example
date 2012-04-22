@@ -3,3 +3,4 @@
 mycms.db
 local.py
 app/static/
+app/base/static/css/style.css

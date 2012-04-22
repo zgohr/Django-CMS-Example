@@ -137,6 +137,8 @@ INSTALLED_APPS = (
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
     'sekizai',
+    'form_designer',
+    'form_designer.contrib.cms_plugins.form_designer_form',
     'app.base',
 )
 

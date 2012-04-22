@@ -3,6 +3,7 @@ Django==1.4
 # The key to this whole project until Django-CMS releases for the Django 1.4 upgrade
 git+git://github.com/tback/django-cms.git@django_1.4_compatibility/here_be_dragons#egg=django-cms
 git+git://github.com/tomscytale/django-sekizai.git#egg=django-sekizai
+git+git://github.com/philomat/django-form-designer.git#egg=django-form-designer
 
 Jinja2==2.6
 PIL==1.1.7
