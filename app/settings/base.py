@@ -125,7 +125,6 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'django.contrib.humanize',
     'django.contrib.staticfiles',
-    'session_csrf',
     'cms',
     'menus',
     'mptt',
