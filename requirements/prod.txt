@@ -1,4 +1,5 @@
 Django==1.4
+django-registration==0.8
 
 # The key to this whole project until Django-CMS releases for the Django 1.4 upgrade
 git+git://github.com/tback/django-cms.git@django_1.4_compatibility/here_be_dragons#egg=django-cms

@@ -125,6 +125,7 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'django.contrib.humanize',
     'django.contrib.staticfiles',
+    'registration',
     'cms',
     'menus',
     'mptt',
@@ -140,6 +141,8 @@ INSTALLED_APPS = (
     'form_designer.contrib.cms_plugins.form_designer_form',
     'app.base',
 )
+
+ACCOUNT_ACTIVATION_DAYS = 7
 
 PASSWORD_HASHERS = (
     'django.contrib.auth.hashers.BCryptPasswordHasher',
