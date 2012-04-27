@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# This is not the best way to do this
+# In the best case scenario we would want to
+# create a .less file that requires the bootstrap
+# and bootstrap responsive less files
+
 cd bootstrap
 
 make
